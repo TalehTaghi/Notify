@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+        margin: 0;
+        box-sizing: border-box;
+}
+
+:root {
+    --green: #2dcb71;
+    --gray_e3: #e3e3e3;
+    --gray_84: #848484;
+    --gray_22: #222222;
+    --open: 'Open Sans', sans-serif;
+    --rale: 'Raleway', sans-serif;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.pt-60
+{
+    padding-top: 60px;
+}
+
+.pb-60
+{
+    padding-bottom: 60px;
+}
+
+.container {
+    max-width: 1180px;
+    margin: auto;
+}
+
+.icons
+{
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+}
+
+.icons i
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+/* Header starts css */
+
+.greenLine {
+    background-color: var(--green);
+    height: 10px;
+}
+
+header {
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header p {
+    max-width: 469px;
+    font: 500 24px var(--open);
+    line-height: 36px;
+    color: #ffffff;
+}
+
+.os a {
+    width: 52px;
+    height: 52px;
+    background-color: #000;
+    opacity: .4;
+    margin-right: 15px;
+    margin-top: 25px;
+}
+
+.os i {
+    font-size: 22px;
+}
+
+.os a:hover {
+    background-color: var(--green);
+    opacity: 1;
+}
+
+header .container {
+    padding-left: 115px;
+}
+
+header {
+    padding: 170px 0;
+}
+
+/* Features starts css */
+
+#features .container
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#features article
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#features .icons
+{
+    width: 96px;
+    height: 96px;
+    background-color: var(--green);
+}
+
+#features .icons i
+{
+    font-size: 43px;
+}
+
+#features h3
+{
+    font: 600 22px var(--rale);
+    line-height: 18px;
+    color: var(--gray_22);
+}
+
+#features p
+{
+    max-width: 358px;
+    font: 16px var(--open);
+    line-height: 26px;
+    color: var(--gray_84);
+    text-align: center;
+}
+
+/* getNotified starts css */
+
+#getNotified
+{
+    background-color: var(--gray_e3);
+}
+
+#getNotified .container
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#getNotified h1
+{
+    font: 600 22px var(--rale);
+    line-height: 18px;
+    color: var(--gray_22);
+}
+
+#getNotified p
+{
+    font: 16px var(--open);
+    max-width: 565px;
+    line-height: 26px;
+    color: var(--gray_84);
+}
+
+#getNotified form
+{
+    display: flex;
+    align-content: flex-start;
+}
+
+#getNotified form input
+{
+    width: 305px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    border: 1px solid #c8c8c8;
+    border-right: none;
+    border-radius: 15px 0 0 15px;
+    font: 18px var(--open);
+    line-height: 18px;
+    color: var(--gray_84);
+}
+
+#getNotified form button
+{
+    /* padding: 20px 45px; */
+    width: 140px;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    background-color: var(--green);
+    font: bold 22px var(--rale);
+    line-height: 18px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#getNotified .video
+{
+    width: 500px;
+    height: 305px;
+}
+
+
+#getNotified .video video
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+/* People starts css */
+
+#people .container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#people p:nth-child(1)
+{
+    font: italic 18px var(--open);
+    max-width: 822px;
+    line-height: 30px;
+    color: var(--gray_84);
+    text-align: center;
+}
+
+#people h4
+{
+    font: bold 18px var(--rale);
+    line-height: 20px;
+    color: #2e2e2e;
+}
+
+#people .images
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+
+#people .images .divOfImg
+{
+    max-height: 50px;
+    background-color: var(--green);
+    margin-right: 5px;
+}
+
+#people .images .divOfImg img:hover
+{
+    opacity: 0.35;
+}
+
+#people h2
+{
+    font: 600 24px var(--rale);
+    line-height: 24px;
+    color: #000000;
+}
+
+#people p:nth-child(5)
+{
+    font: 16px var(--open);
+    line-height: 26px;
+    color: var(--gray_84);
+    text-align: center;
+}
+
+#people .social a
+{
+    width: 34px;
+    height: 34px;
+    background-color: #c5c5c5;
+    margin-right: 5px;
+}
+
+#people .social i
+{
+    font-size: 17px;
+}
+
+#people .social a:hover
+{
+    background-color: var(--green);
+    opacity: 1;
+}
+
+/* Footer starts css */
+
+footer
+{
+    background-color: var(--gray_e3);
+}
+
+footer nav ul
+{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer nav ul li
+{
+    margin-right: 35px;
+}
+
+footer nav ul li a
+{
+    font: 16px var(--open);
+    line-height: 26px;
+    color: var(--gray_84);
+    text-decoration: none;
+}
+
+@media only screen and (max-width:768px)
+{
+    header .container
+    {
+        padding-left: 0 !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header p
+    {
+        text-align: center;
+    }
+
+
+
+    #features
+    {
+        padding-bottom: 30px;
+    }
+
+    #features .container
+    {
+        flex-direction: column;
+    }
+
+    #features article
+    {
+        margin-bottom: 30px;
+    }
+
+
+
+    #getNotified input
+    {
+        max-width: 200px;
+    }
+
+    #getNotified button
+    {
+        font-size: 18px;
+        max-width: 100px;
+    }
+
+
+
+    #people .container
+    {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+
+
+    footer nav ul
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer nav ul li
+    {
+        margin-bottom: 15px;
+    }
+
+    footer nav ul li a
+    {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:1064px)
+{
+    #getNotified .container
+    {
+        justify-content: center
+    }
+
+    #getNotified article
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    #getNotified p
+    {
+        text-align: center;
+    }
+
+    #getNotified .video
+    {
+        width: 90%;
+        height: 100%;
+        display: block;
+        margin: auto;
+    }
+
+
+
+    #people .images
+    {
+        justify-content: center;
+    }
+
+    #people .images .divOfImg
+    {
+        margin-bottom: 5px;
+    }
+}
